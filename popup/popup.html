@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>PaperTrail</title>
+  <link rel="stylesheet" href="../lib/theme.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo">P</span><span class="serif">PaperTrail</span></div>
+    <button class="btn" id="openDash">Tracker ↗</button>
+  </header>
+
+  <section id="page" class="page">
+    <div class="loading">Reading this page…</div>
+  </section>
+
+  <section class="stats" id="stats"></section>
+
+  <section class="recent">
+    <div class="sec-h"><span>Recent</span><a href="#" id="seeAll">See all</a></div>
+    <ul id="recent"></ul>
+  </section>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
