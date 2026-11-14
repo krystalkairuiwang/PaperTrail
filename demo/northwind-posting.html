@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Business Analyst – Northwind Analytics</title>
+  <meta property="og:site_name" content="Northwind Analytics" />
+  <link rel="stylesheet" href="demo.css" />
+  <!-- schema.org JobPosting: the same structured data most ATSs publish for Google Jobs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Business Analyst",
+    "datePosted": "2026-11-02",
+    "validThrough": "2026-12-15",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": { "@type": "Organization", "name": "Northwind Analytics" },
+    "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Durham", "addressRegion": "NC", "addressCountry": "US" } },
+    "baseSalary": { "@type": "MonetaryAmount", "currency": "USD", "value": { "@type": "QuantitativeValue", "minValue": 78000, "maxValue": 92000, "unitText": "YEAR" } },
+    "description": "<p><b>About Northwind</b><br>Northwind Analytics helps regional retailers forecast demand and price smarter. We are a 140-person team in Durham, NC.</p><p><b>What you'll do</b></p><ul><li>Build and maintain the weekly demand-forecast scorecard used by client leadership</li><li>Write SQL against our Snowflake warehouse and prototype models in Python</li><li>Turn ambiguous client questions into structured analyses and clear recommendations</li><li>Design pricing tests and measure lift with proper controls</li></ul><p><b>Qualifications</b></p><ul><li>Degree in business analytics, economics, statistics, or similar</li><li>1–3 years in analytics or consulting</li><li>Strong SQL and Excel; Python or R preferred</li><li>Clear written and verbal communication</li></ul><p><b>Compensation</b><br>$78,000 – $92,000 base, plus annual bonus and full benefits.</p><p>Northwind Analytics is an equal opportunity employer.</p>"
+  }
+  </script>
+</head>
+<body>
+  <div class="topbar"><div class="mark" style="background:#0b5cad">N</div><b>Northwind Analytics</b><span style="color:#888">· Careers</span></div>
+  <div class="wrap">
+    <h1>Business Analyst</h1>
+    <div class="sub">Durham, NC · Full-time · Analytics</div>
+    <a class="apply" style="background:#0b5cad" href="#application">Apply for this job</a>
+
+    <h3>About Northwind</h3>
+    <p>Northwind Analytics helps regional retailers forecast demand and price smarter. We are a 140-person team in Durham, NC.</p>
+    <h3>What you'll do</h3>
+    <ul>
+      <li>Build and maintain the weekly demand-forecast scorecard used by client leadership</li>
+      <li>Write SQL against our Snowflake warehouse and prototype models in Python</li>
+      <li>Turn ambiguous client questions into structured analyses and clear recommendations</li>
+      <li>Design pricing tests and measure lift with proper controls</li>
+    </ul>
+    <h3>Qualifications</h3>
+    <ul>
+      <li>Degree in business analytics, economics, statistics, or similar</li>
+      <li>1–3 years in analytics or consulting</li>
+      <li>Strong SQL and Excel; Python or R preferred</li>
+      <li>Clear written and verbal communication</li>
+    </ul>
+    <h3>Compensation</h3>
+    <p>$78,000 – $92,000 base, plus annual bonus and full benefits.</p>
+    <p><i>Northwind Analytics is an equal opportunity employer.</i></p>
+
+    <form class="app" id="application" action="northwind-confirmation.html" method="get">
+      <h3 style="margin-top:0">Apply for this job</h3>
+      <div class="f"><label for="n">Full name</label><input id="n" name="name" value="Demo Candidate" /></div>
+      <div class="f"><label for="e">Email</label><input id="e" type="email" name="email" value="candidate@example.com" /></div>
+      <div class="f"><label for="r">Resume/CV</label><input id="r" type="file" name="resume" /></div>
+      <button class="apply" style="background:#0b5cad" type="submit">Submit application</button>
+    </form>
+  </div>
+  <div class="demo-note"><b>Demo 1: ATS posting with structured data.</b> PaperTrail reads the schema.org JobPosting. Click <b>Submit application</b> to see it log the application automatically.</div>
+</body>
+</html>

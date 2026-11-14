@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Insights Analyst | Quill &amp; Co. Careers</title>
+  <meta property="og:site_name" content="Quill & Co." />
+  <link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+  <div class="topbar"><div class="mark" style="background:#6b4fbb">Q</div><b>Quill &amp; Co.</b><span style="color:#888">· Careers</span></div>
+  <div class="wrap" id="app">
+    <h1>Insights Analyst</h1>
+    <div class="sub">Raleigh, NC · Full-time · Consumer Insights</div>
+    <button class="apply" style="background:#6b4fbb" id="start">Apply now</button>
+
+    <h3>About the role</h3>
+    <p>Quill &amp; Co. makes stationery sold in 900 stores. The Insights Analyst turns point-of-sale and survey data into the merchandising calls our buyers make each season.</p>
+    <h3>Responsibilities</h3>
+    <ul>
+      <li>Own the weekly sell-through report and explain what moved</li>
+      <li>Run customer surveys and conjoint studies for new product lines</li>
+      <li>Build store-cluster models to guide assortment</li>
+    </ul>
+    <h3>Qualifications</h3>
+    <ul>
+      <li>Degree in analytics, marketing, economics, or similar</li>
+      <li>1–2 years of experience; SQL and Excel required, R or Python a plus</li>
+    </ul>
+    <h3>Benefits</h3>
+    <p>Medical, dental and vision coverage, a 401(k) match, and a generous employee discount.</p>
+    <p><i>Quill &amp; Co. is an equal opportunity employer.</i></p>
+
+    <form class="app" id="form" hidden onsubmit="return false">
+      <h3 style="margin-top:0">Apply</h3>
+      <div class="f"><label for="n">Full name</label><input id="n" value="Demo Candidate" /></div>
+      <div class="f"><label for="e">Email</label><input id="e" type="email" value="candidate@example.com" /></div>
+      <div class="f"><label for="r">Resume</label><input id="r" type="file" /></div>
+      <button class="apply" style="background:#6b4fbb" id="submit" type="submit">Submit application</button>
+    </form>
+  </div>
+  <div class="demo-note"><b>Demo 4: no clear confirmation.</b> After you submit, this site only says "All set!", which isn't a confirmation message PaperTrail can be sure of. Instead of guessing, PaperTrail asks <b>Did you just apply?</b> a few seconds later.</div>
+  <script>
+    document.getElementById('start').onclick = () => {
+      const f = document.getElementById('form');
+      f.hidden = false;
+      f.scrollIntoView({ behavior: 'smooth' });
+    };
+    document.getElementById('form').addEventListener('submit', () => {
+      setTimeout(() => {
+        document.getElementById('app').innerHTML =
+          '<div class="done"><div class="check" style="background:#6b4fbb">✓</div><h1>All set!</h1><p class="sub">Our talent team will take a look at your materials.</p></div>';
+        window.scrollTo(0, 0);
+      }, 500);
+    });
+  </script>
+</body>
+</html>

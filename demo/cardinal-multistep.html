@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Operations Analytics Associate - Cardinal Freight Careers</title>
+  <meta property="og:site_name" content="Cardinal Freight" />
+  <link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+  <div class="topbar"><div class="mark" style="background:#b42318">C</div><b>Cardinal Freight</b><span style="color:#888">· Careers</span></div>
+  <div class="wrap">
+    <section data-route="posting">
+      <h1>Operations Analytics Associate</h1>
+      <div class="sub">Atlanta, GA · Full time · Job requisition ID R-48211</div>
+      <a class="apply" style="background:#b42318" href="#/apply/my-information">Apply</a>
+      <h3>About the role</h3>
+      <p>Cardinal Freight moves 30,000 truckloads a week across the Southeast. The Operations Analytics team finds the slack in that network: empty miles, dwell time, and lanes we price wrong.</p>
+      <h3>Responsibilities</h3>
+      <ul>
+        <li>Own lane-level cost and service dashboards for regional operations leaders</li>
+        <li>Build forecasting and optimization models for carrier capacity</li>
+        <li>Quantify the impact of network changes with before/after and difference-in-differences analysis</li>
+      </ul>
+      <h3>Qualifications</h3>
+      <ul>
+        <li>Bachelor's or Master's degree in analytics, operations research, economics, or related field</li>
+        <li>0–3 years of experience; SQL required, Python or R preferred</li>
+        <li>Comfort presenting to operators who don't live in spreadsheets</li>
+      </ul>
+      <p><i>Cardinal Freight is an equal opportunity employer.</i></p>
+    </section>
+
+    <section data-route="my-information" hidden>
+      <div class="steps"><span class="on">1 My Information</span>›<span>2 Review</span></div>
+      <h2>My Information</h2>
+      <div class="f"><label for="fn">Legal name</label><input id="fn" value="Demo Candidate" /></div>
+      <div class="f"><label for="em">Email address</label><input id="em" type="email" value="candidate@example.com" /></div>
+      <a class="apply" style="background:#b42318" href="#/apply/review">Save and Continue</a>
+    </section>
+
+    <section data-route="review" hidden>
+      <div class="steps"><span>1 My Information</span>›<span class="on">2 Review</span></div>
+      <h2>Review</h2>
+      <p>Demo Candidate · candidate@example.com</p>
+      <button class="apply" style="background:#b42318" id="submit" type="button">Submit</button>
+    </section>
+
+    <section data-route="confirmation" hidden class="done">
+      <div class="check" style="background:#1f9d55">✓</div>
+      <h1>Application Submitted</h1>
+      <p class="sub">You can check the status of your application anytime from your candidate home.</p>
+    </section>
+  </div>
+  <div class="demo-note"><b>Demo 3: multi-step, Workday-style.</b> The steps change the URL without reloading the page. PaperTrail keeps the posting in memory through each step and logs it when you click <b>Submit</b>.</div>
+  <script>
+    function route() {
+      const h = location.hash.replace(/^#\/?(apply\/)?/, '') || 'posting';
+      document.querySelectorAll('[data-route]').forEach((s) => (s.hidden = s.dataset.route !== h));
+      window.scrollTo(0, 0);
+    }
+    addEventListener('hashchange', route);
+    route();
+    document.getElementById('submit').onclick = () => setTimeout(() => (location.hash = '#/apply/confirmation'), 500);
+  </script>
+</body>
+</html>
